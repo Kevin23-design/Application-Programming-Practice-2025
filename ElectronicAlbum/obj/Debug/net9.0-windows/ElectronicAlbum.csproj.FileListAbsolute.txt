@@ -1,0 +1,17 @@
+F:\code\summer\ElectronicAlbum\bin\Debug\net9.0-windows\ElectronicAlbum.exe
+F:\code\summer\ElectronicAlbum\bin\Debug\net9.0-windows\ElectronicAlbum.deps.json
+F:\code\summer\ElectronicAlbum\bin\Debug\net9.0-windows\ElectronicAlbum.runtimeconfig.json
+F:\code\summer\ElectronicAlbum\bin\Debug\net9.0-windows\ElectronicAlbum.dll
+F:\code\summer\ElectronicAlbum\bin\Debug\net9.0-windows\ElectronicAlbum.pdb
+F:\code\summer\ElectronicAlbum\obj\Debug\net9.0-windows\ElectronicAlbum.Form1.resources
+F:\code\summer\ElectronicAlbum\obj\Debug\net9.0-windows\ElectronicAlbum.csproj.GenerateResource.cache
+F:\code\summer\ElectronicAlbum\obj\Debug\net9.0-windows\ElectronicAlbum.GeneratedMSBuildEditorConfig.editorconfig
+F:\code\summer\ElectronicAlbum\obj\Debug\net9.0-windows\ElectronicAlbum.AssemblyInfoInputs.cache
+F:\code\summer\ElectronicAlbum\obj\Debug\net9.0-windows\ElectronicAlbum.AssemblyInfo.cs
+F:\code\summer\ElectronicAlbum\obj\Debug\net9.0-windows\ElectronicAlbum.csproj.CoreCompileInputs.cache
+F:\code\summer\ElectronicAlbum\obj\Debug\net9.0-windows\ElectronicAlbum.sourcelink.json
+F:\code\summer\ElectronicAlbum\obj\Debug\net9.0-windows\ElectronicAlbum.dll
+F:\code\summer\ElectronicAlbum\obj\Debug\net9.0-windows\refint\ElectronicAlbum.dll
+F:\code\summer\ElectronicAlbum\obj\Debug\net9.0-windows\ElectronicAlbum.pdb
+F:\code\summer\ElectronicAlbum\obj\Debug\net9.0-windows\ElectronicAlbum.genruntimeconfig.cache
+F:\code\summer\ElectronicAlbum\obj\Debug\net9.0-windows\ref\ElectronicAlbum.dll

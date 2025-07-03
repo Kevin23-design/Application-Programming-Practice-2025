@@ -1,0 +1,7 @@
+F:\code\summer\ConsoleApp\bin\Debug\ConsoleApp.exe.config
+F:\code\summer\ConsoleApp\bin\Debug\ConsoleApp.exe
+F:\code\summer\ConsoleApp\bin\Debug\ConsoleApp.pdb
+F:\code\summer\ConsoleApp\obj\Debug\ConsoleApp.csproj.AssemblyReference.cache
+F:\code\summer\ConsoleApp\obj\Debug\ConsoleApp.csproj.CoreCompileInputs.cache
+F:\code\summer\ConsoleApp\obj\Debug\ConsoleApp.exe
+F:\code\summer\ConsoleApp\obj\Debug\ConsoleApp.pdb

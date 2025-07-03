@@ -1,0 +1,16 @@
+F:\code\summer\WinFormsApp1\bin\Debug\net9.0-windows\WinFormsApp1.exe
+F:\code\summer\WinFormsApp1\bin\Debug\net9.0-windows\WinFormsApp1.deps.json
+F:\code\summer\WinFormsApp1\bin\Debug\net9.0-windows\WinFormsApp1.runtimeconfig.json
+F:\code\summer\WinFormsApp1\bin\Debug\net9.0-windows\WinFormsApp1.dll
+F:\code\summer\WinFormsApp1\bin\Debug\net9.0-windows\WinFormsApp1.pdb
+F:\code\summer\WinFormsApp1\obj\Debug\net9.0-windows\WinFormsApp1.Form1.resources
+F:\code\summer\WinFormsApp1\obj\Debug\net9.0-windows\WinFormsApp1.csproj.GenerateResource.cache
+F:\code\summer\WinFormsApp1\obj\Debug\net9.0-windows\WinFormsApp1.GeneratedMSBuildEditorConfig.editorconfig
+F:\code\summer\WinFormsApp1\obj\Debug\net9.0-windows\WinFormsApp1.AssemblyInfoInputs.cache
+F:\code\summer\WinFormsApp1\obj\Debug\net9.0-windows\WinFormsApp1.AssemblyInfo.cs
+F:\code\summer\WinFormsApp1\obj\Debug\net9.0-windows\WinFormsApp1.csproj.CoreCompileInputs.cache
+F:\code\summer\WinFormsApp1\obj\Debug\net9.0-windows\WinFormsApp1.dll
+F:\code\summer\WinFormsApp1\obj\Debug\net9.0-windows\refint\WinFormsApp1.dll
+F:\code\summer\WinFormsApp1\obj\Debug\net9.0-windows\WinFormsApp1.pdb
+F:\code\summer\WinFormsApp1\obj\Debug\net9.0-windows\WinFormsApp1.genruntimeconfig.cache
+F:\code\summer\WinFormsApp1\obj\Debug\net9.0-windows\ref\WinFormsApp1.dll

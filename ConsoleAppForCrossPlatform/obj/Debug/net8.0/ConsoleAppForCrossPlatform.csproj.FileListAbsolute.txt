@@ -1,0 +1,14 @@
+F:\code\summer\ConsoleAppForCrossPlatform\bin\Debug\net8.0\ConsoleAppForCrossPlatform.exe
+F:\code\summer\ConsoleAppForCrossPlatform\bin\Debug\net8.0\ConsoleAppForCrossPlatform.deps.json
+F:\code\summer\ConsoleAppForCrossPlatform\bin\Debug\net8.0\ConsoleAppForCrossPlatform.runtimeconfig.json
+F:\code\summer\ConsoleAppForCrossPlatform\bin\Debug\net8.0\ConsoleAppForCrossPlatform.dll
+F:\code\summer\ConsoleAppForCrossPlatform\bin\Debug\net8.0\ConsoleAppForCrossPlatform.pdb
+F:\code\summer\ConsoleAppForCrossPlatform\obj\Debug\net8.0\ConsoleAppForCrossPlatform.GeneratedMSBuildEditorConfig.editorconfig
+F:\code\summer\ConsoleAppForCrossPlatform\obj\Debug\net8.0\ConsoleAppForCrossPlatform.AssemblyInfoInputs.cache
+F:\code\summer\ConsoleAppForCrossPlatform\obj\Debug\net8.0\ConsoleAppForCrossPlatform.AssemblyInfo.cs
+F:\code\summer\ConsoleAppForCrossPlatform\obj\Debug\net8.0\ConsoleAppForCrossPlatform.csproj.CoreCompileInputs.cache
+F:\code\summer\ConsoleAppForCrossPlatform\obj\Debug\net8.0\ConsoleAppForCrossPlatform.dll
+F:\code\summer\ConsoleAppForCrossPlatform\obj\Debug\net8.0\refint\ConsoleAppForCrossPlatform.dll
+F:\code\summer\ConsoleAppForCrossPlatform\obj\Debug\net8.0\ConsoleAppForCrossPlatform.pdb
+F:\code\summer\ConsoleAppForCrossPlatform\obj\Debug\net8.0\ConsoleAppForCrossPlatform.genruntimeconfig.cache
+F:\code\summer\ConsoleAppForCrossPlatform\obj\Debug\net8.0\ref\ConsoleAppForCrossPlatform.dll
