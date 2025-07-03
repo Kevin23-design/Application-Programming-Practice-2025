@@ -1,6 +1,5 @@
 using System;
 using System.Drawing;
-using System.Media;
 using System.Windows.Forms;
 
 namespace ElectronicAlbum
@@ -9,21 +8,18 @@ namespace ElectronicAlbum
     {
         private System.Windows.Forms.ComboBox cmbBigGroup;
         private System.Windows.Forms.ComboBox cmbSmallGroup;
-        private Button btnPlayAudio;
-        private Button btnStopAudio; 
-
-        private SoundPlayer currentPlayer;
 
         private readonly string[] imagePaths = { "1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg", "8.jpg", "9.jpg", "10.jpg", "11.jpg", "12.jpg" };
-        private readonly string[] imageDescriptions = { "吸蜜鹦鹉在枝头", "吸蜜鹦鹉在花间", "吸蜜鹦鹉在树叉", "珠颈斑鸠在屋檐", "珠颈斑鸠在草坪", "珠颈斑鸠在林间", "白头海雕在崖壁", "白头海雕在飞翔", "白头海雕在狩猎", "游隼在电线杆", "游隼在天空", "游隼在狩猎" };
+        private readonly string[] imageDescriptions = { "鹦鹉在枝头", "鹦鹉在花间", "鹦鹉在天空", "朱颈斑鸠在屋檐", "朱颈斑鸠在草坪", "朱颈斑鸠在林间", "白头鹰在崖壁", "白头鹰在飞翔", "白头鹰在狩猎", "游隼在电线杆", "游隼在天空", "游隼在狩猎" };
         private readonly (int start, int end)[] bigGroups = { (0, 5), (6, 11) };
         private readonly (int start, int end)[] smallGroups = { (0, 2), (3, 5), (6, 8), (9, 11) };
         private int currentIndex = 0;
 
+        // 分级分组结构
         private readonly (int start, int end, string name, (int start, int end, string name)[] subGroups)[] groupHierarchy = new[]
         {
-            (0, 5, "林鸟", new[] { (0, 2, "吸蜜鹦鹉"), (3, 5, "珠颈斑鸠") }),
-            (6, 11, "猛禽", new[] { (6, 8, "白头海雕"), (9, 11, "游隼") })
+            (0, 5, "林鸟", new[] { (0, 2, "鹦鹉"), (3, 5, "朱颈斑鸠") }),
+            (6, 11, "猛禽", new[] { (6, 8, "白头鹰"), (9, 11, "游隼") })
         };
 
         public Form1()
@@ -85,9 +81,6 @@ namespace ElectronicAlbum
                     progressBar.Maximum = imagePaths.Length - 1;
                     progressBar.Value = index;
                     currentIndex = index;
-
-                    // 更新页码信息
-                    lblPageInfo.Text = $"第 {index + 1} 张，共 {imagePaths.Length} 张";
                 }
                 else
                 {
@@ -96,44 +89,11 @@ namespace ElectronicAlbum
             }
         }
 
-        private void SetCurrentIndex(int index)
-        {
-            if (index < 0 || index >= imagePaths.Length)
-                return;
-
-            // 1. 显示图片
-            ShowImage(index);
-
-            // 2. 同步大组、小组下拉框
-            for (int bigIdx = 0; bigIdx < groupHierarchy.Length; bigIdx++)
-            {
-                var group = groupHierarchy[bigIdx];
-                if (index >= group.start && index <= group.end)
-                {
-                    if (cmbBigGroup.SelectedIndex != bigIdx)
-                        cmbBigGroup.SelectedIndex = bigIdx;
-
-                    // 查找小组
-                    for (int smallIdx = 0; smallIdx < group.subGroups.Length; smallIdx++)
-                    {
-                        var sub = group.subGroups[smallIdx];
-                        if (index >= sub.start && index <= sub.end)
-                        {
-                            if (cmbSmallGroup.SelectedIndex != smallIdx)
-                                cmbSmallGroup.SelectedIndex = smallIdx;
-                            break;
-                        }
-                    }
-                    break;
-                }
-            }
-        }
-
         private void btnGo_Click(object sender, EventArgs e)
         {
             if (int.TryParse(txtPage.Text, out int page) && page >= 1 && page <= imagePaths.Length)
             {
-                SetCurrentIndex(page - 1);
+                ShowImage(page - 1);
             }
         }
 
@@ -144,7 +104,7 @@ namespace ElectronicAlbum
 
         private void slideShowTimer_Tick(object sender, EventArgs e)
         {
-            SetCurrentIndex((currentIndex + 1) % imagePaths.Length);
+            ShowImage((currentIndex + 1) % imagePaths.Length);
         }
 
         private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
@@ -163,11 +123,11 @@ namespace ElectronicAlbum
         {
             if (e.X < pictureBox1.Width / 2)
             {
-                SetCurrentIndex((currentIndex - 1 + imagePaths.Length) % imagePaths.Length);
+                ShowImage((currentIndex - 1 + imagePaths.Length) % imagePaths.Length);
             }
             else
             {
-                SetCurrentIndex((currentIndex + 1) % imagePaths.Length);
+                ShowImage((currentIndex + 1) % imagePaths.Length);
             }
         }
 
@@ -187,64 +147,15 @@ namespace ElectronicAlbum
 
         private void cmbSmallGroup_SelectedIndexChanged(object sender, EventArgs e)
         {
+            // 选择小组时跳转
             int bigIdx = cmbBigGroup.SelectedIndex;
             int smallIdx = cmbSmallGroup.SelectedIndex;
             if (bigIdx >= 0 && smallIdx >= 0)
             {
                 var sub = groupHierarchy[bigIdx].subGroups[smallIdx];
-                SetCurrentIndex(sub.start);
-
-                // 动态添加播放按钮
-                if (btnPlayAudio != null)
-                {
-                    Controls.Remove(btnPlayAudio);
-                    btnPlayAudio.Dispose();
-                }
-                btnPlayAudio = new Button();
-                btnPlayAudio.Location = new Point(500, 200);
-                btnPlayAudio.Size = new Size(95, 30);
-                btnPlayAudio.Text = $"播放音频";
-                btnPlayAudio.Click += (s, args) => PlayAudio(sub.name);
-                Controls.Add(btnPlayAudio);
-
-                // 动态添加停止按钮
-                if (btnStopAudio != null)
-                {
-                    Controls.Remove(btnStopAudio);
-                    btnStopAudio.Dispose();
-                }
-                btnStopAudio = new Button();
-                btnStopAudio.Location = new Point(605, 200);
-                btnStopAudio.Size = new Size(95, 30);
-                btnStopAudio.Text = "停止音频";
-                btnStopAudio.Click += (s, args) => StopAudio();
-                Controls.Add(btnStopAudio);
-            }
-        }
-
-        private void PlayAudio(string groupName)
-        {
-            string audioFilePath = $"{groupName}.wav";
-            if (System.IO.File.Exists(audioFilePath))
-            {
-                StopAudio(); // 播放前先停止上一个
-                currentPlayer = new SoundPlayer(audioFilePath);
-                currentPlayer.Play();
-            }
-            else
-            {
-                MessageBox.Show($"音频文件未找到: {audioFilePath}", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        private void StopAudio()
-        {
-            if (currentPlayer != null)
-            {
-                currentPlayer.Stop();
-                currentPlayer.Dispose();
-                currentPlayer = null;
+                ShowImage(sub.start);
             }
         }
     }
 }
+   

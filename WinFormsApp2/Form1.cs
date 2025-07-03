@@ -17,7 +17,8 @@ namespace WinFormsApp2
 
         private async void btnStart_Click(object sender, EventArgs e)
         {
-            string university = txtUniversity.Text.Trim();
+            // 直接指定贴吧名
+            string university = "华东师范大学吧";
             int postCount = (int)numPostCount.Value;
             progressBar.Value = 0;
             lstTitles.Items.Clear();
@@ -42,27 +43,57 @@ namespace WinFormsApp2
             int page = 0, crawled = 0;
             string kw = Uri.EscapeDataString(university);
 
-            using HttpClient client = new HttpClient();
-            client.DefaultRequestHeaders.Add("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36");
-            client.DefaultRequestHeaders.Add("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8");
-            client.DefaultRequestHeaders.Add("Accept-Language", "en-US,en;q=0.5");
-            client.DefaultRequestHeaders.Add("Referer", "https://tieba.baidu.com/");
+            using var handler = new HttpClientHandler
+            {
+                AutomaticDecompression = System.Net.DecompressionMethods.GZip | System.Net.DecompressionMethods.Deflate
+            };
+            
+            using var client = new HttpClient(handler);
+            client.DefaultRequestHeaders.Add("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36");
+            client.DefaultRequestHeaders.Add("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7");
+            client.DefaultRequestHeaders.Add("Accept-Language", "zh-CN,zh;q=0.9");
+            client.DefaultRequestHeaders.Add("Accept-Encoding", "gzip, deflate, br");
+            client.DefaultRequestHeaders.Add("Cache-Control", "max-age=0");
+            client.DefaultRequestHeaders.Add("Connection", "keep-alive");
+            client.DefaultRequestHeaders.Add("Upgrade-Insecure-Requests", "1");
+            client.DefaultRequestHeaders.Add("sec-ch-ua", "\"Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"115\"");
+            client.DefaultRequestHeaders.Add("sec-ch-ua-mobile", "?0");
+            client.DefaultRequestHeaders.Add("sec-ch-ua-platform", "\"Windows\"");
+            client.DefaultRequestHeaders.Add("Sec-Fetch-Dest", "document");
+            client.DefaultRequestHeaders.Add("Sec-Fetch-Mode", "navigate");
+            client.DefaultRequestHeaders.Add("Sec-Fetch-Site", "none");
+            client.DefaultRequestHeaders.Add("Sec-Fetch-User", "?1");
 
             while (crawled < postCount)
             {
                 string url = $"https://tieba.baidu.com/f?kw={kw}&pn={page * 50}";
-                string html = await client.GetStringAsync(url);
-
-                HtmlAgilityPack.HtmlDocument doc = new HtmlAgilityPack.HtmlDocument(); // 修复：明确指定命名空间
-                doc.LoadHtml(html);
-
-                var nodes = doc.DocumentNode.SelectNodes("//li[contains(@class,'j_thread_list')]");
-                if (nodes == null) break;
-
-                foreach (var node in nodes)
+                try 
                 {
-                    if (crawled >= postCount) break;
-                    var titleNode = node.SelectSingleNode(".");
+                    string html = await client.GetStringAsync(url);
+                    
+                    HtmlAgilityPack.HtmlDocument doc = new HtmlAgilityPack.HtmlDocument();
+                    doc.LoadHtml(html);
+
+                    var nodes = doc.DocumentNode.SelectNodes("//div[contains(@class, 'threadlist_title')]/a");
+                    if (nodes == null) break;
+
+                    foreach (var node in nodes)
+                    {
+                        if (crawled >= postCount) break;
+                        titles.Add(node.InnerText.Trim());
+                        summaries.Add(node.GetAttributeValue("title", ""));
+                        crawled++;
+                        progress?.Report((int)((float)crawled / postCount * 100));
+                    }
+                    page++;
+                    // 添加延时避免请求过快
+                    await Task.Delay(Random.Shared.Next(1000, 2000));
+                }
+                catch (HttpRequestException ex)
+                {
+                    // 如果遇到错误，等待后重试
+                    await Task.Delay(3000);
+                    continue;
                 }
             }
 

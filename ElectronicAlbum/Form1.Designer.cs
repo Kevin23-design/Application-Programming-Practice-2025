@@ -14,7 +14,6 @@
         private System.Windows.Forms.ProgressBar progressBar;
         private System.Windows.Forms.Label lblDescription;
         private System.Windows.Forms.Timer slideShowTimer;
-        private System.Windows.Forms.Label lblPageInfo; // 新增页码信息控件
 
         /// <summary>
         ///  Clean up any resources being used.
@@ -44,7 +43,6 @@
             chkSlideShow = new CheckBox();
             progressBar = new ProgressBar();
             lblDescription = new Label();
-            lblPageInfo = new Label(); 
             slideShowTimer = new System.Windows.Forms.Timer(components);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -59,15 +57,6 @@
             pictureBox1.TabStop = false;
             pictureBox1.MouseClick += pictureBox1_MouseClick;
             pictureBox1.MouseMove += pictureBox1_MouseMove;
-            // 
-            // lblPageInfo
-            // 
-            lblPageInfo.Location = new Point(50, 330); // 设置位置在图片下方
-            lblPageInfo.Name = "lblPageInfo";
-            lblPageInfo.Size = new Size(302, 23);
-            lblPageInfo.TabIndex = 6;
-            lblPageInfo.Text = "第 1 页，共 12 页"; // 初始文本
-            lblPageInfo.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // txtPage
             // 
@@ -117,7 +106,6 @@
             // 
             ClientSize = new Size(820, 887);
             Controls.Add(pictureBox1);
-            Controls.Add(lblPageInfo); // 添加页码信息控件
             Controls.Add(txtPage);
             Controls.Add(btnGo);
             Controls.Add(chkSlideShow);
