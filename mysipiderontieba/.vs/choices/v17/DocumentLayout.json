@@ -1,37 +1,37 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "F:\\code\\summer\\mysipiderontieba\\",
+  "WorkspaceRootPath": "F:\\code\\summer\\choices\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5BBB4B0E-B399-4778-9413-E536B8C2E04B}|choices.csproj|f:\\code\\summer\\mysipiderontieba\\frmcompare.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5BBB4B0E-B399-4778-9413-E536B8C2E04B}|choices.csproj|f:\\code\\summer\\choices\\frmcompare.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5BBB4B0E-B399-4778-9413-E536B8C2E04B}|choices.csproj|solutionrelative:frmcompare.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5BBB4B0E-B399-4778-9413-E536B8C2E04B}|choices.csproj|f:\\code\\summer\\mysipiderontieba\\frmcompare.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5BBB4B0E-B399-4778-9413-E536B8C2E04B}|choices.csproj|solutionrelative:frmcompare.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5BBB4B0E-B399-4778-9413-E536B8C2E04B}|choices.csproj|f:\\code\\summer\\mysipiderontieba\\postinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5BBB4B0E-B399-4778-9413-E536B8C2E04B}|choices.csproj|f:\\code\\summer\\choices\\postinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5BBB4B0E-B399-4778-9413-E536B8C2E04B}|choices.csproj|solutionrelative:postinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5BBB4B0E-B399-4778-9413-E536B8C2E04B}|choices.csproj|f:\\code\\summer\\mysipiderontieba\\frmspider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5BBB4B0E-B399-4778-9413-E536B8C2E04B}|choices.csproj|solutionrelative:frmspider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5BBB4B0E-B399-4778-9413-E536B8C2E04B}|choices.csproj|f:\\code\\summer\\choices\\frmcompare.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BBB4B0E-B399-4778-9413-E536B8C2E04B}|choices.csproj|solutionrelative:frmcompare.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5BBB4B0E-B399-4778-9413-E536B8C2E04B}|choices.csproj|F:\\code\\summer\\mysipiderontieba\\frmcompare.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{5BBB4B0E-B399-4778-9413-E536B8C2E04B}|choices.csproj|F:\\code\\summer\\choices\\frmcompare.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5BBB4B0E-B399-4778-9413-E536B8C2E04B}|choices.csproj|solutionrelative:frmcompare.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5BBB4B0E-B399-4778-9413-E536B8C2E04B}|choices.csproj|F:\\code\\summer\\mysipiderontieba\\frmspider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{5BBB4B0E-B399-4778-9413-E536B8C2E04B}|choices.csproj|F:\\code\\summer\\choices\\frmspider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5BBB4B0E-B399-4778-9413-E536B8C2E04B}|choices.csproj|solutionrelative:frmspider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5BBB4B0E-B399-4778-9413-E536B8C2E04B}|choices.csproj|f:\\code\\summer\\mysipiderontieba\\frmspider.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5BBB4B0E-B399-4778-9413-E536B8C2E04B}|choices.csproj|f:\\code\\summer\\choices\\frmspider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BBB4B0E-B399-4778-9413-E536B8C2E04B}|choices.csproj|solutionrelative:frmspider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BBB4B0E-B399-4778-9413-E536B8C2E04B}|choices.csproj|f:\\code\\summer\\choices\\frmspider.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5BBB4B0E-B399-4778-9413-E536B8C2E04B}|choices.csproj|solutionrelative:frmspider.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5BBB4B0E-B399-4778-9413-E536B8C2E04B}|choices.csproj|f:\\code\\summer\\mysipiderontieba\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5BBB4B0E-B399-4778-9413-E536B8C2E04B}|choices.csproj|f:\\code\\summer\\choices\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5BBB4B0E-B399-4778-9413-E536B8C2E04B}|choices.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -62,11 +62,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "PostInfo.cs",
-              "DocumentMoniker": "F:\\code\\summer\\mysipiderontieba\\PostInfo.cs",
+              "DocumentMoniker": "F:\\code\\summer\\choices\\PostInfo.cs",
               "RelativeDocumentMoniker": "PostInfo.cs",
-              "ToolTip": "F:\\code\\summer\\mysipiderontieba\\PostInfo.cs",
+              "ToolTip": "F:\\code\\summer\\choices\\PostInfo.cs",
               "RelativeToolTip": "PostInfo.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAYwAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -74,11 +74,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "frmCompare.Designer.cs",
-              "DocumentMoniker": "F:\\code\\summer\\mysipiderontieba\\frmCompare.Designer.cs",
+              "DocumentMoniker": "F:\\code\\summer\\choices\\frmCompare.Designer.cs",
               "RelativeDocumentMoniker": "frmCompare.Designer.cs",
-              "ToolTip": "F:\\code\\summer\\mysipiderontieba\\frmCompare.Designer.cs",
+              "ToolTip": "F:\\code\\summer\\choices\\frmCompare.Designer.cs",
               "RelativeToolTip": "frmCompare.Designer.cs",
               "ViewState": "AgIAAGMAAAAAAAAAAIAwwHIAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -86,11 +86,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "frmCompare.cs [Design]",
-              "DocumentMoniker": "F:\\code\\summer\\mysipiderontieba\\frmCompare.cs",
+              "DocumentMoniker": "F:\\code\\summer\\choices\\frmCompare.cs",
               "RelativeDocumentMoniker": "frmCompare.cs",
-              "ToolTip": "F:\\code\\summer\\mysipiderontieba\\frmCompare.cs [Design]",
+              "ToolTip": "F:\\code\\summer\\choices\\frmCompare.cs [Design]",
               "RelativeToolTip": "frmCompare.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-03T07:26:17.447Z",
@@ -98,12 +98,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "frmSpider.cs [\u8BBE\u8BA1]",
-              "DocumentMoniker": "F:\\code\\summer\\mysipiderontieba\\frmSpider.cs",
+              "DocumentMoniker": "F:\\code\\summer\\choices\\frmSpider.cs",
               "RelativeDocumentMoniker": "frmSpider.cs",
               "ToolTip": "F:\\code\\summer\\choices\\frmSpider.cs [\u8BBE\u8BA1]",
-              "RelativeToolTip": "..\\choices\\frmSpider.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "frmSpider.cs [\u8BBE\u8BA1]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-03T06:14:50.332Z"
             },
@@ -111,22 +111,22 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "frmCompare.cs",
-              "DocumentMoniker": "F:\\code\\summer\\mysipiderontieba\\frmCompare.cs",
+              "DocumentMoniker": "F:\\code\\summer\\choices\\frmCompare.cs",
               "RelativeDocumentMoniker": "frmCompare.cs",
-              "ToolTip": "F:\\code\\summer\\mysipiderontieba\\frmCompare.cs",
+              "ToolTip": "F:\\code\\summer\\choices\\frmCompare.cs",
               "RelativeToolTip": "frmCompare.cs",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAjwHQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAcwEsAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-03T07:14:17.213Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "frmSpider.cs",
-              "DocumentMoniker": "F:\\code\\summer\\mysipiderontieba\\frmSpider.cs",
+              "DocumentMoniker": "F:\\code\\summer\\choices\\frmSpider.cs",
               "RelativeDocumentMoniker": "frmSpider.cs",
-              "ToolTip": "F:\\code\\summer\\mysipiderontieba\\frmSpider.cs",
+              "ToolTip": "F:\\code\\summer\\choices\\frmSpider.cs",
               "RelativeToolTip": "frmSpider.cs",
               "ViewState": "AgIAANsAAAAAAAAAAAAawPEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -136,9 +136,9 @@
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "frmSpider.Designer.cs",
-              "DocumentMoniker": "F:\\code\\summer\\mysipiderontieba\\frmSpider.Designer.cs",
+              "DocumentMoniker": "F:\\code\\summer\\choices\\frmSpider.Designer.cs",
               "RelativeDocumentMoniker": "frmSpider.Designer.cs",
-              "ToolTip": "F:\\code\\summer\\mysipiderontieba\\frmSpider.Designer.cs",
+              "ToolTip": "F:\\code\\summer\\choices\\frmSpider.Designer.cs",
               "RelativeToolTip": "frmSpider.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAALoAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -148,9 +148,9 @@
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "Program.cs",
-              "DocumentMoniker": "F:\\code\\summer\\mysipiderontieba\\Program.cs",
+              "DocumentMoniker": "F:\\code\\summer\\choices\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "F:\\code\\summer\\mysipiderontieba\\Program.cs",
+              "ToolTip": "F:\\code\\summer\\choices\\Program.cs",
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

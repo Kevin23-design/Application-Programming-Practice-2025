@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "exF9QY8trnE=",
+  "dgSpecHash": "GbudzXmASVU=",
   "success": true,
-  "projectFilePath": "F:\\code\\summer\\mysipiderontieba\\choices.csproj",
+  "projectFilePath": "F:\\code\\summer\\choices\\choices.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gzs27\\.nuget\\packages\\htmlagilitypack\\1.12.1\\htmlagilitypack.1.12.1.nupkg.sha512",
     "C:\\Users\\gzs27\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.1\\microsoft.netcore.platforms.1.1.1.nupkg.sha512",
