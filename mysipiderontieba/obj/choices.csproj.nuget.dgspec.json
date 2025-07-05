@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\code\\summer\\choices\\choices.csproj": {}
+    "F:\\code\\summer\\mysipiderontieba\\choices.csproj": {}
   },
   "projects": {
-    "F:\\code\\summer\\choices\\choices.csproj": {
+    "F:\\code\\summer\\mysipiderontieba\\choices.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\code\\summer\\choices\\choices.csproj",
+        "projectUniqueName": "F:\\code\\summer\\mysipiderontieba\\choices.csproj",
         "projectName": "choices",
-        "projectPath": "F:\\code\\summer\\choices\\choices.csproj",
+        "projectPath": "F:\\code\\summer\\mysipiderontieba\\choices.csproj",
         "packagesPath": "C:\\Users\\gzs27\\.nuget\\packages\\",
-        "outputPath": "F:\\code\\summer\\choices\\obj\\",
+        "outputPath": "F:\\code\\summer\\mysipiderontieba\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -58,6 +58,10 @@
             "System.Net.Http": {
               "target": "Package",
               "version": "[4.3.4, )"
+            },
+            "jieba.NET": {
+              "target": "Package",
+              "version": "[0.42.2, )"
             }
           },
           "imports": [
